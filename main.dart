@@ -37,3 +37,11 @@ class floskMethod implements paymentMethod {
     return true;
   }
 }
+
+class empMethod implements paymentMethod {
+  @override
+  bool pay(double amount) {
+    print('Paying $amount using Emp Method');
+    return true;
+  }
+}
