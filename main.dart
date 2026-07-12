@@ -26,3 +26,5 @@ class floskMethod implements paymentMethod {
     return true;
   }
 }
+
+class empoMethod 
