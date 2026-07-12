@@ -1,4 +1,14 @@
-void main() {}
+void main() {
+  paymentMethod paymentmethod;
+  paymentmethod =new jibMethod();
+  paymentmethod.pay(100.0);
+
+  paymentmethod = new jwallyMethod();
+  paymentmethod.pay(200.0);
+
+  paymentmethod = new floskMethod();
+  paymentmethod.pay(300.0);
+}
 
 abstract class paymentMethod {
   bool pay(double amount);
@@ -19,6 +29,7 @@ class jwallyMethod implements paymentMethod {
     return true;
   }
 }
+
 class floskMethod implements paymentMethod {
   @override
   bool pay(double amount) {
