@@ -34,3 +34,16 @@ class empMethod implements paymentMethod {
     return true;
   }
 }
+class paymentProcessor {
+  paymentMethod method;
+
+  paymentProcessor(this.method);
+
+  void processPayment(double amount) {
+    if (method.pay(amount)) {
+      print('Payment of $amount processed successfully.');
+    } else {
+      print('Payment of $amount failed.');
+    }
+  }
+}
