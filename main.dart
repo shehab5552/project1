@@ -19,3 +19,10 @@ class jwallyMethod implements paymentMethod {
     return true;
   }
 }
+class floskMethod implements paymentMethod {
+  @override
+  bool pay(double amount) {
+    print('Paying $amount using Flosk');
+    return true;
+  }
+}
