@@ -43,7 +43,7 @@ class paymentProcessor {
     if (method.pay(amount)) {
       print('Payment of $amount processed successfully.');
     } else {
-      print('Payment of $amount failed.');
+      print('Payment of $amount failed.');  
     }
   }
 }
